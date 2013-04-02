@@ -1,0 +1,4 @@
+newsreader
+==========
+
+Sample Android project
