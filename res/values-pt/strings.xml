@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NewsReader</string>
+    <string name="enter_username">Nome de usuário</string>
+    <string name="enter_password">Senha</string>
+    <string name="login">Iniciar sessão</string>
+    <string name="menu_settings">Configurações</string>    
+    <string name="login_successful">Bem-vindo!</string>
+    <string name="login_error">Combinação incorreta nome de usuário / senha</string>
+
+</resources>
