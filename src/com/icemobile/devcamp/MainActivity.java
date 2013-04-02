@@ -36,11 +36,11 @@ public class MainActivity extends Activity implements OnClickListener {
 		if(v.equals(loginButton)) {
 			String username = editUsername.getText().toString();
 			String password = editPassword.getText().toString();
+			int resId = R.string.login_error;
 			if(username.equals("foo") && password.equals("pass")) {
-				Toast.makeText(this, R.string.login_successful, Toast.LENGTH_LONG).show();
-			} else {
-				Toast.makeText(this, R.string.login_error, Toast.LENGTH_LONG).show();
+				resId = R.string.login_successful;
 			}
+			Toast.makeText(this, resId, Toast.LENGTH_LONG).show();
 		}
 	}
 
