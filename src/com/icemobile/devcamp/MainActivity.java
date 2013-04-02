@@ -1,6 +1,7 @@
 package com.icemobile.devcamp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -36,11 +37,13 @@ public class MainActivity extends Activity implements OnClickListener {
 		if(v.equals(loginButton)) {
 			String username = editUsername.getText().toString();
 			String password = editPassword.getText().toString();
-			int resId = R.string.login_error;
 			if(username.equals("foo") && password.equals("pass")) {
-				resId = R.string.login_successful;
+				Toast.makeText(this, R.string.login_successful, Toast.LENGTH_LONG).show();
+				Intent intent = new Intent(this, NewsListActivity.class);
+				startActivity(intent);
+			} else {
+				Toast.makeText(this, R.string.login_error, Toast.LENGTH_LONG).show();
 			}
-			Toast.makeText(this, resId, Toast.LENGTH_LONG).show();
 		}
 	}
 

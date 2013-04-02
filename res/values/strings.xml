@@ -8,5 +8,7 @@
     <string name="menu_settings">Settings</string>
     <string name="login_successful">Welcome!</string>
     <string name="login_error">Wrong combination username / password</string>
+    <string name="default_row_string">Default text</string>
+    <string name="default_row_image">Default image</string>
 
 </resources>

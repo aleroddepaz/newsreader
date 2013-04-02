@@ -2,6 +2,12 @@ package com.icemobile.devcamp.data;
 
 public class NewsItem {
 
+	public NewsItem(String headline, String image) {
+		super();
+		this.headline = headline;
+		this.image = image;
+	}
+
 	private String headline;
 	private String image;
 

@@ -4,12 +4,21 @@
     android:layout_height="match_parent" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/row_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/ic_launcher"
-        android:contentDescription="TODO"/>
+        android:contentDescription="@string/default_row_image"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/row_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/row_image"
+        android:text="@string/default_row_string"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
