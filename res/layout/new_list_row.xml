@@ -4,7 +4,7 @@
     android:layout_height="match_parent" >
 
     <ImageView
-        android:id="@+id/row_image"
+        android:id="@+id/thumbnail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -13,11 +13,11 @@
         android:src="@drawable/ic_launcher" />
 
     <TextView
-        android:id="@+id/row_text"
+        android:id="@+id/headline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/row_image"
+        android:layout_toRightOf="@+id/thumbnail"
         android:text="@string/default_row_string"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
